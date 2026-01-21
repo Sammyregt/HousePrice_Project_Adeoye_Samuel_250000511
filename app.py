@@ -37,4 +37,6 @@ def home():
                            neighborhoods=neighborhoods)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    print("Starting Flask server...")
+    print("Open this link in your browser: http://127.0.0.1:5000")
+    app.run(host="0.0.0.0", port=5000, debug=True)
